@@ -1,0 +1,150 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+
+:root {
+	--white: #fff;
+	--primary: #F0572D;
+	--light: #EFEFEF;
+	--title: #31363F;
+	--text: #191B1D;
+
+}
+
+body,
+input,
+textarea,
+button {
+	font-family: 'Roboto';
+	font-weight: 400;
+}
+
+input:focus {
+  outline-color: var(--primary);
+  box-shadow: 0 0 0 2px var(--primary);
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+	color: var(--text);
+}
+
+button {
+	cursor: pointer;
+}
+
+h1 {
+	color: var(--primary);
+	font-size: 2.25rem;
+}
+
+h2 {
+	color: var(--primary);
+	font-size: 1.8rem;
+}
+
+h3 {
+	color: var(--primary);
+	font-size: 1.125rem;
+}
+
+.containerGlobal {
+	width: 100%;
+	max-width: 78rem;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+label {
+	font-weight: bold;
+	font-size: 0.75rem;
+	position: absolute;
+	margin-top: -18px;
+}
+
+/* DATEPICKER */
+.react-datepicker {
+	box-shadow: 5px 10px 5px #50505034;
+	background-color: var(--white);
+}
+
+.react-datepicker__header {
+	text-transform: uppercase;
+	background-color: var(--light);
+}
+
+.react-datepicker__navigation-icon::before {
+	border-color: var(--primary);
+}
+
+.react-datepicker__month-container {
+	max-width: 500px;
+	height: 400px;
+}
+
+.react-datepicker__day-name {
+	width: 3rem;
+}
+
+.react-datepicker__day {
+	width: 3rem;
+	line-height: 3rem;
+	font-size: 1rem;
+}
+
+.react-datepicker__day--in-range {
+	color: #fff;
+	background-color: var(--primary);
+}
+
+.react-datepicker__day--in-selecting-range:not(.react-datepicker__day--in-range, .react-datepicker__month-text--in-range, .react-datepicker__quarter-text--in-range, .react-datepicker__year-text--in-range) {
+	background-color: var(--primary);
+}
+
+/* Responsividade Calendario Desktop*/
+@media screen and (max-width:1566px) {
+	.react-datepicker__month-container {
+		max-width: 400px;
+
+	}
+}
+
+@media screen and (max-width:1266px) {
+	.react-datepicker__month-container {
+		max-width: 380px;
+
+	}
+}
+
+/* Responsividade Calendario Tablet */
+@media screen and (max-width: 826px) {
+
+	.react-datepicker__month-container {
+		float: none;
+	}
+}
+
+@media screen and (max-width: 1338px) {
+  .react-datepicker__month-container {
+    float: none;
+	}
+}
+
+
+
+/* 
+RESPONSIVIDADE PARA DESKTOP, TABLET E MOBILE
+
+320px — 480px: dispositivos móveis.
+480px — 768px: iPads, tablets.
+768px — 1024px: telas pequenas, laptops.
+1024px — 1200px: desktops, telas grandes.
+1200px e mais — Telas extragrandes. 
+
+*/

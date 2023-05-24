@@ -1,0 +1,210 @@
+.containerBuscador {
+  background: url("../../assets/bg-search-box.jpg") no-repeat center center;
+  background-size: cover;
+  opacity: 0.8;
+  padding: 6rem;
+  text-align: center;
+}
+
+.containerBuscador h1 {
+  color: var(--white);
+  margin-bottom: 1.5rem;
+}
+/*  */
+.listBusca {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-left: 2rem;
+}
+
+
+/*  */
+.contentInputs {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border: 2px solid var(--primary);
+}
+
+.contentInputs .inputs {
+  position: relative;
+  display: flex;
+  flex: 1;
+}
+
+.contentInputs .inputs label {
+  position: absolute;
+  font-size: 1.5rem;
+  top: 26px;
+  left: 12px;
+}
+
+.contentInputs .inputs select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  line-height: 1;
+  width: 100%;
+
+
+  /* border-radius: 6px; */
+  background: white;
+  height: 3.1rem;
+  font-size: 1rem;
+  padding-left: 2.5rem;
+  
+}
+
+.contentInputs .inputs select:focus {
+  outline: 0;
+}
+
+.contentInputs .inputs select option {
+  background: white;
+}
+
+.contentInputs .inputs .inputDatePicker {
+  width: 100%;
+  height: 3rem;
+  font-size: 0.875rem;
+  padding-left: 2.5rem;
+  border: none;
+}
+
+.contentInputs .inputs .inputDatePicker:focus {
+  outline: none;
+}
+
+.contentInputs .inputs input::placeholder {
+  color: #7F7F7F;
+}
+
+.contentInputs svg {
+  color: #7F7F7F;
+}
+
+.contentInputs button.buttonBuscar {
+  width: 20%;
+  height: 3.1rem;
+  border: 1px solid transparent;
+  /* border-radius: 6px; */
+
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--white);
+  background-color: var(--primary);
+  transition: all ease-in-out .2s;
+}
+
+.contentInputs .react-datepicker__navigation {
+  width: 10%;
+  height: 2rem;
+}
+
+.contentInputs button:hover {
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  background-color: var(--white);
+}
+
+/* ======== CATEGORY ========== */
+.category {
+  max-width: 1250px;
+  margin-bottom: 2rem;
+  margin: 0 auto;
+}
+
+.category h2 {
+  margin: 1.5rem 0;
+}
+
+/* ============= RECOMENDAÇOES =============== */
+.containerRecomendacao {
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+}
+
+.contentRecomendacao {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.contentRecomendacao h2 {
+  padding-top: 2rem;
+  margin-bottom: 1.2rem;
+}
+
+.containerCard {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+/* REPONSIVIDADE DESKTOP */
+@media screen and (max-width: 1262PX) {
+  .category {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .contentRecomendacao h2 {
+    margin: 1rem;
+  }
+}
+
+/* REPONSIVIDADE TABLET */
+@media screen and (max-width: 850px) {
+  .containerBuscador {
+    width: 100%;
+  }
+
+  .category h2 {
+    margin: 1rem;
+  }
+
+  .contentRecomendacao h2 {
+    margin: 1rem;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .containerCard {
+    display: flex;
+    flex-wrap: wrap
+  }
+}
+
+@media screen and (max-width:750px) {
+  .containerBuscador h1 {
+    font-size: 1.75rem;
+  }
+
+  .contentInputs {
+    display: block;
+  }
+
+  .contentInputs .input {
+    margin-top: 0.5rem;
+  }
+
+  .contentInputs .inputs label {
+    top: 30px;
+  }
+
+  .contentInputs input {
+    margin-top: 0.5rem;
+  }
+
+  .contentInputs button.buttonBuscar {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+}
+
+/* RESPONSIVIDADE MOBILE */
+@media screen and (max-width:450px) {
+  .containerBuscador {
+    padding: 1rem;
+  }
+}

@@ -1,0 +1,227 @@
+.container {
+    width: 100%;
+    padding-bottom: 120px;
+}
+
+.form form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.container h1 {
+    margin: 15px 0 35px 10px;
+    font-size: 1.5rem;
+}
+
+.form {
+    width: 100%;
+    height: auto;
+}
+
+.form h1 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.form h2 {
+    font-size: .9rem;
+    margin-bottom: 25px;
+}
+
+
+.productRegister {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 0 auto;
+    background-color: #fcfcfc;
+    border: 1px solid #ebebeb;
+    padding: 30px 10px;
+}
+
+.productRegister div:nth-child(n+1) {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    position: relative;
+}
+
+.productRegister input,
+select {
+    width: 100%;
+    height: 45px;
+    border-radius: 5px;
+    border: 1px solid #9c9c9c;
+    padding: 5px;
+    font-size: 1rem;
+}
+
+.productRegister textarea {
+    width: 100%;
+    border: 1px solid #9c9c9c;
+    padding: 5px;
+    font-size: 1rem;
+}
+
+.buttonCriar {
+    width: 90%;
+    height: 45px;
+    margin: 0 auto;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.buttonCriar:hover {
+    background-color: white;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+.buttonCriarLoading {
+    width: 90%;
+    height: 45px;
+    margin: 0 auto;
+    background-color: #727272;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.buttonCriarLoading:hover {
+    background-color: #727272;
+    color: white;
+}
+
+.spinner
+{
+    width: 40px;
+    margin: 0 auto;
+}
+
+
+.buttonAdd {
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+    background-color: var(--primary);
+    color: white;
+    font-weight: 400;
+    font-size: 1.7rem;
+    border: none;
+    margin: 0 5px;
+}
+
+#imagens .excluirDiv
+{
+    display: flex;
+    margin: 5px 0;
+}
+
+#imagens .excluirDiv span
+{
+    width: 25px;
+    background-position: center;
+    background-size: cover;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAABP0lEQVR4nO2Yy07DMBBF8yksiHiIHbXdXYUd+P8/YAGitN30xkEsQZaChAKJnHTsTKq5Uraec2QnnkxRSCQSiUQSmdrqW1SmLBLluFlfhhpJFq+f7q+91W/e6W1dmRvq9VGZ0jv12li184+ruyTwjdNf4aGWwA98uz6pRBeeWgJdeGqJz4258E49/ylAIIE+eOpdTiGRDT6FRHZ4SonZ4CkkZoc/RYIN/BQJdvBjJNjCx0g0Tu8bp97ZwkdK8IYfK8ES/rdE3XPeW/gDW/iQ8MJ+WL0d2AG+Ahj42rA/QoiEZymBIXir9wGWrQQiLqnwn+udemEngRE3LDsJTGgP2EjghN5mdgkQNGatRP7mDoRdZfYOFQkKZpNAwkLIIYGH1dWiB1v/SSxqtNiVWORwN9d4HZUpk43XJRKJRHKW+QaUqwzfL9sYYwAAAABJRU5ErkJggg==");
+}
+
+#imagens div:nth-child(2) {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@media (min-width: 700px) {
+    .productRegister {
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+
+    .productRegister div:nth-child(-n+4) {
+        width: 47%;
+    }
+
+    #atributos,
+    #imagens {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    #atributos select {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    #atributos .iconesAdd {
+        width: 100%;
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #atributos .iconesAdd div {
+        width: auto;
+        padding: 5px;
+    }
+
+    #atributos .iconesAdd .close
+    {
+        height: 15px;
+        width: 15px;
+        background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAABP0lEQVR4nO2Yy07DMBBF8yksiHiIHbXdXYUd+P8/YAGitN30xkEsQZaChAKJnHTsTKq5Uraec2QnnkxRSCQSiUQSmdrqW1SmLBLluFlfhhpJFq+f7q+91W/e6W1dmRvq9VGZ0jv12li184+ruyTwjdNf4aGWwA98uz6pRBeeWgJdeGqJz4258E49/ylAIIE+eOpdTiGRDT6FRHZ4SonZ4CkkZoc/RYIN/BQJdvBjJNjCx0g0Tu8bp97ZwkdK8IYfK8ES/rdE3XPeW/gDW/iQ8MJ+WL0d2AG+Ahj42rA/QoiEZymBIXir9wGWrQQiLqnwn+udemEngRE3LDsJTGgP2EjghN5mdgkQNGatRP7mDoRdZfYOFQkKZpNAwkLIIYGH1dWiB1v/SSxqtNiVWORwN9d4HZUpk43XJRKJRHKW+QaUqwzfL9sYYwAAAABJRU5ErkJggg==");
+        background-position: center;
+        background-size: cover;
+    }
+
+    .containerAddIcone{
+        display: flex;
+        align-items: center;
+    }
+
+
+    #imagens div:nth-child(2) {
+        width: 100%;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #politicas {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #politicas div {
+        width: 100%;
+    }
+
+    @media (min-width: 1000px) {
+        .container {
+            width: 990px;
+            margin: 0 auto;
+        }
+
+    }
+}

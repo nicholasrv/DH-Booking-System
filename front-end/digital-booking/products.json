@@ -1,0 +1,109 @@
+{
+  "cidades": [
+    {
+      "cidade": "Alagoas",
+      "produtos": 
+      [
+        {
+         "nome": "Maceió" 
+        },
+        {
+         "nome": "Arapiraca"
+        },
+        {
+         "nome": "Palmeira dos Índios" 
+        },
+        {
+         "nome": "Rio Largo" 
+        },
+        {
+         "nome": "Penedo"
+        }
+      ]
+    },
+    {
+      "cidade": "Bahia",
+      "produtos": 
+      [
+        {
+          "nome": "Ilhéus" 
+         },
+         {
+          "nome": "Porto Seguro"
+         },
+         {
+          "nome": "Salvador" 
+         },
+         {
+          "nome": "Mucuri" 
+         },
+         {
+          "nome": "Itacaré"
+         }
+      ]
+    },
+    {
+      "cidade": "Ceará",
+      "produtos": 
+      [
+        {
+          "nome": "Fortaleza" 
+         },
+         {
+          "nome": "Caucaia"
+         },
+         {
+          "nome": "Juazeiro do Norte" 
+         },
+         {
+          "nome": "Maracanaú" 
+         },
+         {
+          "nome": "Sobral"
+         }
+      ]
+    },
+    {
+      "cidade": "Rio Grande do Norte",
+      "produtos":
+      [
+        {
+          "nome": "Natal" 
+         },
+         {
+          "nome": "Mossoró"
+         },
+         {
+          "nome": "Parnamirim" 
+         },
+         {
+          "nome": "São Gonçalo do Amarante" 
+         },
+         {
+          "nome": "Macaíba"
+         }
+      ]
+    },
+    {
+      "cidade": "Sergipe",
+      "produtos":
+      [
+        {
+          "nome": "Aracaju" 
+         },
+         {
+          "nome": "Estância"
+         },
+         {
+          "nome": "Itaporanga d'Ajuda" 
+         },
+         {
+          "nome": "Barra dos Coqueiros" 
+         },
+         {
+          "nome": "Pacatuba"
+         }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+    "category": [
+			{
+				"img": "https://www.qualviagem.com.br/wp-content/uploads/2015/06/infinity-blue-beneficios.jpg",
+				"category": "Resort",
+				"title": "Resorts",
+				"location": "Salvador",
+				"description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+				"found": 25424
+			},
+			{
+				"img": "https://pix10.agoda.net/hotelImages/124/1246280/1246280_16061017110043391702.jpg?ca=6&ce=1&s=1024x768",
+				"category": "Hotel",
+				"title": "Hoteis",
+				"location": "Rio de Janeiro",
+				"description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+				"found": 12565
+			},
+			{
+				"img": "https://pesweb.azureedge.net/spimg/hotelbannerimages/pestana-sao-paulo-hotel-banner-01.jpg?scale=downscaleonly&encoder=freeimage&progressive=true&quality=50&w=1440&h=780&mode=crop&anchor=bottomcenter",
+				"category": "Apartamento",
+				"title": "Apartamentos",
+				"location": "Brasilia",
+				"description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+				"found": 8952
+			},
+			{
+				"img": "https://viagemeturismo.abril.com.br/wp-content/uploads/2020/11/gettyimages-964872010.jpg?quality=70&strip=info&w=1024&resize=1200,800",
+				"category": "beira mar",
+				"title": "Beira Mar",
+				"location": "São Paulo",
+				"description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45",
+				"found": 2565
+			}     
+		],
+		"hotels": [
+			{
+				"id": 1,
+				"img": "https://www.qualviagem.com.br/wp-content/uploads/2015/06/infinity-blue-beneficios.jpg",
+				"star": "⭐⭐⭐⭐⭐",
+				"numberAvaliation": 10,
+				"textAvaliation": "muito bom",
+				"title": "Faial Prime Suíte",
+				"location": "Brasil",
+				"description": "No coração de Faial Prime Suíte, desfrute de uma pousada inspirada nas paixões de Florianópolis."
+			}
+			,
+			{
+				"id": 2,
+				"img": "https://images.trvl-media.com/lodging/2000000/1890000/1887800/1887706/82dea5d4.jpg?impolicy=resizecrop&rw=598&ra=fit",
+				"star": "⭐⭐⭐",
+				"numberAvaliation": 5,
+				"textAvaliation": "razoável",
+				"title": "San Raphael Hotel",
+				"location": "Brasil",
+				"description": "No coração de Faial Prime Suíte, desfrute de uma pousada inspirada nas paixões de Florianópolis."
+			},
+			{
+				"id": 3,
+				"img": "https://images.trvl-media.com/lodging/4000000/3860000/3854700/3854700/5012a133.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium",
+				"star": "⭐⭐⭐⭐",
+				"title": "Palácio Tangará",
+				"numberAvaliation": 8,
+				"textAvaliation": "muito bom",
+				"location": "Brasil",
+				"description": "No coração de Faial Prime Suíte, desfrute de uma pousada inspirada nas paixões de Florianópolis."
+			},
+			{
+				"id": 4,
+				"img": "https://images.trvl-media.com/lodging/10000000/9600000/9599500/9599422/90b654ee.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+				"star": "⭐⭐⭐",
+				"numberAvaliation": 5,
+				"textAvaliation": "bom",
+				"title": "Alteza Polanco",
+				"location": "México",
+				"description": "Este apart-hotel 4 estrelas possui um restaurante e fica perto de Plaza Polanco."
+			}
+		]
+		
+}

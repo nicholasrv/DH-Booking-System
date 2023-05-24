@@ -1,0 +1,67 @@
+/*Style Politicas*/
+
+.policy {
+  width: 100%;
+  margin-bottom: 50px;  
+}
+
+
+.policy .separator {
+  border-top: 2px solid #333;
+  border-color: var(--light);
+  margin-top: 0.875rem;
+}
+
+
+.policy .politicas {
+  padding: 1.56rem 0;  
+  display: grid;
+  gap: 0.875rem;
+  grid-template-columns: 33% 33% 33%; 
+  grid-template-rows: 5rem 5rem;
+}
+
+.policy .politicas div { 
+  text-align: start;
+}
+
+.policy .politicas h3 {
+  color: #333;
+  margin-bottom: 1.5rem;  
+}
+
+.policy .politicas ul {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  list-style-position: inside;
+}
+
+.policy .politicas ul li {
+  margin-bottom: 1rem;
+}
+
+/*TABLET*/
+@media screen and (max-width: 768px) {
+  .policy .politicas {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50%;
+  }
+}
+
+/*MOBILE*/
+@media screen and (max-width: 479px) {
+  .policy {
+    margin-bottom: 25px;
+  }
+  .policy .politicas {
+    margin: 10px;  
+    grid-template-columns: 100%; 
+    grid-template-rows: 33%;
+  }
+
+  .policy .politicas h3 {
+    color: #333;
+    font-size: 1.5rem;
+  }
+
+}

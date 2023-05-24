@@ -1,0 +1,314 @@
+.reservaContainer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3rem 4rem;
+  gap: 3rem;
+
+  margin-bottom: 4rem;
+}
+
+.formReserva h2 {
+  margin-bottom: 1.3rem;
+}
+
+.formBox  {
+  width: 100%;
+  padding: 1.5rem;
+  border: 1px solid #a3a3a334;
+  box-shadow: 2px 5px 8px #00000034;
+  border-radius: 6px;
+}
+
+.formContent .groupInput {
+  flex: 1;
+  padding: 1.5rem;
+  color: var(--text);
+}
+
+.formContent .groupInput input {
+  width: 49%;
+  padding: 0.875rem;
+  border: none;
+  border-radius: 6px;
+  background: #DFE4EA;
+  font-size: 1rem;
+}
+
+.formContent .groupInput input:nth-child(2) {
+  margin-right: 1rem;
+}
+
+.formContent .groupInput input.lastInput {
+  background: none;
+  border: 1px solid #a3a3a334;
+  box-shadow: 2px 2px 5px #00000034;
+}
+
+.mainContainer {
+
+  flex: 2 1 0;
+}
+
+
+/* DATA DE RESERVA */
+.dataReserva h2 {
+  margin: 3rem 0 1.5rem;
+}
+
+
+/* HORARIO DE CHEGADA */
+.horarioChegada h2 {
+  margin: 3rem 0 1.5rem;
+}
+
+.contentChegada {
+  padding: 2rem;
+  border: 1px solid #a3a3a334;
+  box-shadow: 2px 5px 8px #00000034;
+  border-radius: 6px;
+}
+
+.contentChegada p {
+  display: inline-block;
+  margin-left: 0.5rem;
+}
+
+.contentChegada .inputTime {
+  margin-top: 3rem;
+}
+
+.contentChegada .inputTime p {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.875rem;
+}
+
+.contentChegada .inputTime .iconSelect {
+  width: 40.5%;
+  border-radius: 6px;
+  box-shadow: 1px 1px 5px #00000034;
+
+}
+
+.contentChegada .inputTime select:focus {
+  outline: none;
+}
+
+.contentChegada .inputTime select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url(../../assets/icon-select.svg) no-repeat center right;
+  background-size: 1rem;
+  
+  width: 95%;
+  border: none;
+  height: 46px;
+  padding-left: 1rem;
+  font-size: 1rem;
+
+  border-radius: 6px;
+  border: none;
+
+}
+
+.contentChegada .inputTime option:first-child {
+  color: #3333335d;
+}
+
+/* SIDEBAR */
+.sidebarContainer {
+  flex: 1 1 0;
+  border: 1px solid #a3a3a334;
+  box-shadow: 2px 5px 8px #00000034;
+  border-radius: 6px;
+  margin-top: 3rem;
+}
+
+.sidebarContent h1 {
+  padding: 2rem;
+}
+
+.sidebarContent img {
+  width: 100%;
+}
+
+.sidebarContent .sidebarText {
+  padding-bottom: 3rem;
+
+  border-bottom: 1px solid #33333331;
+  margin: 2rem;
+}
+
+.sidebarContent .sidebarText h3 {
+  color: #3333335d;
+}
+
+.sidebarText span {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.sidebarText .addressHotel {
+  display: flex;
+  gap: 0.5rem;
+
+  margin-top: 1rem;
+}
+
+.checkInOut div {
+  /* background: blue; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 2rem;  
+  border-bottom: 1px solid #33333331;
+
+  margin: 2rem;
+}
+
+.checkInOut p {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.buttonSubmit {
+  padding: 2rem;
+}
+
+.buttonSubmit button {
+  width: 100%;
+  height: 3.5rem;
+  font-size: 1.2rem;
+  color: var(--white);
+  background-color: var(--primary);
+  border: 1px solid transparent;
+  border-radius: 6px;
+  transition: all 0.4s;
+}
+
+.buttonSubmit button:hover {
+  border: 1px solid var(--primary);
+  background-color: var(--white);
+  color: var(--primary);
+}
+
+
+
+/* Politica */
+.policyContainer {
+  background: #F2F2F2;
+  width: 100%;
+  height: 100%;
+  padding: 2rem 4rem;
+  /* margin-bottom: 4rem; */
+}
+
+
+/* RESPONSIVIDADE DESKTOP */
+@media screen and (max-width: 1522px) {
+  .formContent .groupInput {
+    padding: 0.875rem;
+  }
+
+  .formContent .groupInput label {
+    display: block;
+    
+  }
+  
+  .formContent .groupInput input {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and  (max-width: 1338px) {
+  .contentChegada .inputTime .iconSelect {
+    width: 60%;
+  }
+}
+
+@media screen and  (max-width: 966px) {
+  .reservaContainer {
+    padding: 2rem;
+    gap: 2rem;
+  }
+  .contentChegada .inputTime .iconSelect {
+    width: 100%;
+  }
+}
+
+/* TABLET */
+@media screen and (max-width: 768px) {
+  .contentChegada {
+    padding: 1rem;
+  }
+  .contentChegada p{
+    font-size: 0.875rem;
+  }
+}
+
+/* MOBILE */
+@media screen and  (max-width: 488px) {
+  .reservaContainer {
+    padding: 1rem 1em;
+    gap: 0;
+  }
+
+  .contentChegada {
+    padding: 0.5rem;
+  }
+
+  .contentChegada p{
+    font-size: 0.775rem;
+  }
+  
+  .policyContainer {
+    padding: 1rem;
+  }
+}
+
+
+
+
+
+/* RESPONSIVIDADE SIDEBAR DESKTOP */
+@media screen and (max-width: 1275px) {
+  .sidebarContent h1 {
+    font-size: 2rem;
+    padding: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 1136px) {
+  .sidebarContent h1 {
+    font-size: 1.6rem;
+    padding: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 936px) {
+  .sidebarContent h1 {
+    font-size: 1.4rem;
+    padding: 1rem;
+  }
+
+  .sidebarText h2 {
+    font-size: 1.2rem;
+  }
+
+  .sidebarText .addressHotel p {
+    font-size: 0.875rem;
+  }
+
+  .checkInOut p {
+    font-size: 1rem;
+  }
+}
+
+/* TABLET */
+@media screen and  (max-width: 768px) {
+  .sidebarContainer {
+    flex: auto;
+  }
+}

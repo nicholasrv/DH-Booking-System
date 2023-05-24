@@ -1,0 +1,67 @@
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  background-color: var(--light);
+}
+
+.headerImg {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+
+}
+
+.headerImg p {
+  font-size: 1.25rem;
+  font-style: italic;
+  color: var(--text);
+  font-weight: 300;
+  letter-spacing: .2rem;
+}
+
+.headerButtons {
+  display: flex;
+  gap: 0.625rem;
+}
+
+.headerButtons button {
+  width: 12.875rem;
+  height: 2.5rem;
+  color: var(--primary);
+  font-weight: bold;
+  font-size: 1rem;
+  border: 1px solid var(--primary);
+  border-radius: 6px;
+  background: var(--white);
+  /* margin-right: 0.625rem; */
+  transition: all ease-in-out .2s;
+}
+
+.headerButtons button:hover {
+  background: var(--primary);
+  color: var(--white);
+}
+
+
+.headerButtons span{
+  font-size: 1.25rem;
+  font-style: italic;
+  color: var(--text);
+  font-weight: 300;
+  letter-spacing: .2rem;
+  padding-right: 5rem;
+  padding-top: 0.5rem;
+  
+
+}
+
+/* RESPONSIVIDADE TABLET */
+@media screen and (max-width:850px) {
+
+  .headerButtons {
+    display: none;
+  }
+}

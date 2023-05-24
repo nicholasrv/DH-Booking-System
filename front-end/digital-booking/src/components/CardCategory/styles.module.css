@@ -1,0 +1,125 @@
+.containerCategory {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  margin: 0 auto;
+  z-index: 0;
+  
+}
+
+.containerCard {
+  display: flex;
+  gap: 1rem;
+  flex: 1;
+  
+}
+
+/*estilização do card*/
+.card {
+  height: 220px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px #00000059;
+  cursor: pointer;
+}
+
+.card h1 {
+  font-size: 1.25rem;
+}
+
+.card span {
+  font-size: .8rem;
+  margin-right: 0.5rem;
+}
+
+/*Estilização da imagem do card*/
+.card div:nth-child(1) {
+  width: 100%;
+  height: 150px;
+  background-size: cover;
+  border-radius: 10px 10px 0 0px;
+}
+
+.card div:nth-child(2) {
+  padding: 10px;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  transition-duration: .4s;
+}
+
+.card:hover div:nth-child(1) {
+  filter: contrast(120%);
+}
+
+@media screen and (max-width: 1080px) {
+  .card {
+    flex: 0 0 48%;
+    margin: 10px 0;
+    text-shadow: 2px 2px 6px #00000021;
+
+  }
+
+  .card div:nth-child(2) {
+    width: 100%;
+    background-color: #00000085;
+    border-radius: 0 0 10px 10px;
+    position: relative;
+    bottom: 71px;
+    z-index: 0;
+  }
+
+  .card h1 {
+    font-size: 1.7rem;
+    color: white;
+  }
+
+  .card span {
+    font-size: 1rem;
+    color: white;
+  }
+
+  .card div:nth-child(1)
+  /*Estilização da imagem do card*/
+    {
+    width: 100%;
+    height: 220px;
+    background-size: cover;
+    border-radius: 10px;
+  }
+
+
+}
+
+
+@media screen and (max-width: 798px) {
+  .containerCategory {
+    flex-flow: column nowrap;
+  }
+
+  .card {
+    flex: 0 0 100%;
+    margin: 5px;
+  }
+
+  .card div:nth-child(1)
+
+  /*Estilização da imagem do card*/
+    {
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+
+  .containerCategory {
+    width: 90%;
+    height: auto;
+  }
+
+  .containerCard {
+    flex-wrap: wrap;
+    /* padding: 1rem; */
+  }
+}

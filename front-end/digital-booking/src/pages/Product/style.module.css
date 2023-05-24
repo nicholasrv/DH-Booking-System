@@ -1,0 +1,471 @@
+
+
+.containerSlide {
+  width: 100%;
+  height: 300px;
+  border: 1px solid red;
+  display: grid;
+}
+
+.containerSlide div {
+  background-color: #333;
+  border: 1px solid yellow;
+}
+
+/*Style Descrição*/
+.separator {
+  border-top: 2px solid #333;
+  border-color: var(--light);
+  margin-top: 0.875rem;
+}
+
+.descricao
+{
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 100px;
+
+}
+
+
+.descricao p {
+  line-height: 1.5;
+  padding: 1rem 0;
+  font-size: 1.1rem;
+  
+}
+/* Sytle Caracteristicas */
+
+.features {
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.featuresIcons {
+  margin: 50px 0;
+  font-size: 1.3rem;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 5rem 5rem;
+
+}
+
+.featuresIcons p {
+  padding: 25px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#first
+{
+    grid-area: first;
+}
+
+#second {
+  grid-area: second;
+}
+
+#third {
+  grid-area: third;
+}
+
+#fourth {
+  grid-area: fourth;
+}
+
+#fifth {
+  grid-area: fifth;
+}
+
+/* ====RESERVATION ===== */
+.containerReservation {
+  background-color: #f2f2f2;
+  padding: 2rem 2rem 6rem;
+}
+
+.containerReservation h2 {
+  margin-bottom: 1.5rem;
+}
+
+.contentCalender {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+}
+
+/* Calender Text */
+.calenderText {
+  background: var(--white);
+  height: 180px;
+  width: 80%;
+  padding: 2rem 1rem 1rem;
+  border-radius: 6px;
+  box-shadow: 5px 10px 5px #50505034;
+}
+
+.calenderText p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.calenderText button {
+  width: 100%;
+  border: none;
+  padding: 1rem;
+  border-radius: 6px;
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: bold;
+  border: 1px solid transparent;
+  background: var(--primary);
+  transition: 0.2s;
+}
+
+.calenderText button:hover {
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  background-color: var(--white);
+}
+
+/* Estilização do GRID de cinco Imagens */
+
+.containerGridImages {
+  width: 80vw;
+  height: 400px;
+  margin: 30px auto;
+  display: grid;
+  grid-template-areas:
+    "first first second third"
+    "first first fourth fifth";
+  grid-template-rows: 200px 200px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  position: relative;
+  gap: 10px;
+}
+
+.containerGridImages div {
+  width: 100%;
+  min-height: 200px;
+  overflow: hidden;
+  border-radius: 7px;
+  transition: 0.3s;
+}
+
+.containerGridImages div:hover {
+  /* border: 1px solid red; */
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+/*Ajusta as imagens do GRID, Slide desktop e Slide Mobile*/
+.responsiveImages {
+  background-size: cover;
+}
+
+.containerGridImages img {
+  width: 100%;
+  min-height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+
+.containerGridImages div:nth-child(1) {
+  grid-area: first;
+  max-width: 100%;
+  min-height: 200px;
+}
+
+.containerGridImages div:nth-child(2) {
+  grid-area: second;
+}
+
+.containerGridImages div:nth-child(3) {
+  grid-area: third;
+}
+
+.containerGridImages div:nth-child(4) {
+  grid-area: fourth;
+}
+
+.containerGridImages div:nth-child(5) {
+  grid-area: fifth;
+}
+
+/*Estiliza o botão ver mais localizado no grid*/
+#buttonOpenSlideDesktop {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  padding: 8px;
+  background-color: var(--primary);
+  border: 1px solid transparent;
+  color: white;
+  font-weight: 550;
+  font-size: .9rem;
+  border-radius: 5px;
+  transition: .3s;
+}
+
+#buttonOpenSlideDesktop:hover {
+  background-color: white;
+  color: orangered;
+  border: 1px solid orangered;
+}
+
+/*Estilização do Carrosel modelo Desktop*/
+.containerSlideDesktop {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.932);
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  backdrop-filter: blur(3px);
+  z-index: 1;
+  transition: 0.3s;
+}
+
+.imagesDesktop {
+  max-width: 70vw;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  position: block;
+  border-radius: 10px;
+
+}
+
+.containerSlideDesktop div {
+  margin: 0 auto;
+}
+
+.containerSlideDesktop img {
+  width: 100%;
+  height: auto;
+}
+
+
+.containerSlideDesktop button {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  color: white;
+  border: none;
+  background-color: transparent;
+  transition: .3s;
+}
+
+.containerSlideDesktop button:hover {
+  color: orangered;
+}
+
+#buttonNextSlide {
+  right: 0;
+}
+
+#buttonPrevSlide {
+  left: 0;
+}
+
+#buttonCloseSlide {
+  right: 0;
+  top: 0;
+}
+
+/* Estilização do carrosel mobile */
+.containerSlideMobile {
+  display: none;
+}
+
+
+@media screen and (max-width:850px) {
+
+  .containerSlideDesktop {
+    display: none;
+  }
+
+  .containerGridImages {
+    display: none;
+  }
+
+  .containerSlideMobile {
+    display: block;
+  }
+
+  .containerSlideMobile div:nth-child(1) {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  .containerSlideMobile button {
+
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    color: white;
+    border: none;
+    background-color: transparent;
+    transition: .3s;
+  }
+
+  .containerSlideMobile button:hover {
+    color: orangered;
+  }
+
+  .dots {
+    display: flex;
+    padding: 10px 0;
+    justify-content: center;
+  }
+
+  .dot {
+    border: none;
+    width: 10px;
+    height: 10px;
+    background: #c5c5c5;
+    border-radius: 50%;
+    margin: 0 5px;
+    padding: 5px;
+    cursor: pointer;
+  }
+
+  .dot:focus {
+    outline: none;
+  }
+
+  .dot.active {
+    background: orangered;
+  }
+  
+}
+
+/* Responsividade Calendario Desktop*/
+@media screen and (max-width:1206px) {
+  .descricao {
+    padding: 2rem;
+  }
+
+  .features {
+    padding: 2rem;
+  }
+  
+  .policyReserva {
+    padding: 2rem;
+  }
+
+  .contentCalender {
+    grid-template-columns: 2fr;
+    justify-content: center;
+  }
+
+  .calenderText {
+    width: 100%;
+    padding: 4rem;
+    margin-top: 2rem;
+  }
+}
+
+/* Responsividade Calendario Tablet */
+
+
+/*Tablet*/
+@media screen and (max-width: 850px) {
+  .features {
+    width: 100%;
+    background-color: white;
+    display: block;
+
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+
+  .featuresIcons {
+    font-size: 1.5rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 30%;
+
+  }
+
+  .policy div 
+  {
+  margin: 30px;  
+  display: grid;
+  grid-template-columns: 50% 50% ; 
+  grid-template-rows: 50%;
+  }
+  .policy div span ul
+  {
+  margin-top: 1.8rem;
+  font-size: 1.5rem;
+  
+  }
+
+  .policy div span h3
+{
+  color: #333;
+  font-size: 1.8rem;
+}
+
+
+}
+
+/*Mobile*/
+@media screen and (max-width: 480px) {
+  .descricao {
+    margin-top: 15px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .features {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .featuresIcons {
+    width: 100%;
+    font-size: 1rem;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 15%;
+  }
+
+  .features h2 {
+    padding-top: 0;
+  }
+
+  .featuresIcons p {
+    padding: 15px;
+  }
+
+  .policy .politicas 
+  {
+  margin: 10px;  
+  display: grid;
+  grid-template-columns: 100%; 
+  grid-template-rows: 33%;
+  }
+
+  .policy .politicas ul
+  {
+  margin-top: 1.8rem;
+  font-size: 1.8rem;
+  
+  }
+
+  .policy .politicas h3
+{
+  color: #333;
+  font-size: 2.1rem;
+}
+
+}

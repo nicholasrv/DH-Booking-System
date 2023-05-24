@@ -1,0 +1,65 @@
+.container
+{
+    width: 500px;
+    height: auto;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    gap: 10px;
+    box-shadow: 1px 1px 5px #00000044;
+    border-radius: 10px;
+}
+
+.container h1
+{
+    font-size: 1.6rem;
+}
+
+.container p
+{
+    font-weight: 300;
+    font-size: 1.4rem;
+}
+
+.container button
+{
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid orangered;
+    color: orangered;
+    background-color: white;
+    cursor: pointer;
+    transition: .5s;
+    font-size: 1rem;
+}
+
+.container button:hover
+{
+    color: white;
+    background-color: orangered;
+}
+
+@media (max-width:560px)
+{
+    .container
+    {
+        width: 320px;
+    }
+
+    .container p
+    {
+        font-size: 1rem;
+    }
+
+    .container h1
+    {
+        font-size: 1.3rem;
+    }
+
+    .container button
+    {
+        font-size: 1rem;
+    }
+}

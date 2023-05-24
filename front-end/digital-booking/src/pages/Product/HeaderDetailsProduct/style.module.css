@@ -1,0 +1,40 @@
+.headerdetails {
+  width: 100%;
+  min-height: 80px;
+  padding: 5px 25px;
+  background-color: var(--title);
+  color: white;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title span {
+  color: white;
+  font-size: 1rem;
+}
+
+.title h1 {
+  font-size: 2rem;
+}
+
+.backpage section {
+  cursor: pointer;
+  color: var(--primary);
+  margin-left: 90px;
+}
+
+.locationdetails {
+  width: 100%;
+  min-height: 60px;
+  background-color: #f2f2f2;
+
+  display: flex;
+  align-items: center;
+  padding: 0 25px;
+}
+
+.locationdetails svg{
+  margin: 0 5px;
+}
